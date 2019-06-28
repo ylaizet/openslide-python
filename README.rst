@@ -76,11 +76,19 @@ or, if you are installing by hand:
 Using Docker
 --------------
 
-Quick demo
+Quick local demo using docker.
+
+Get some slides and put them in a directory (in `/path/to/slides` in this example)
+
+Test data available at http://openslide.cs.cmu.edu/download/openslide-testdata/
+
+Run demo docker
 
 ::
 
-  docker run -d -v "/path/to/slides:/slides" --name my_slides -p 5000:5000 openslide-python
+  docker run -d -v "/path/to/slides:/slides" -p 5005:5000 ylaizet/openslide-python
+
+Browse you server on port 5005
 
 
 More Information
