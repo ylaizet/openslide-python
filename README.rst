@@ -73,6 +73,16 @@ or, if you are installing by hand:
   python setup.py install --single-version-externally-managed --record /dev/null
 
 
+Using Docker
+--------------
+
+Quick demo
+
+::
+
+  docker run -d -v "/path/to/slides:/slides" --name my_slides -p 5000:5000 openslide-python
+
+
 More Information
 ================
 
